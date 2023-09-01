@@ -16,7 +16,7 @@ const Home = () => {
         {mockData && mockData.length === 0 ? (
           <ShimmerUI />
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 my-14 px-5 md:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 my-14 place-items-center">
             {mockData?.map((item) => {
               return <ProductCard data={item} key={item?.info.id} />;
             })}
