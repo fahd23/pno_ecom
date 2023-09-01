@@ -52,7 +52,7 @@ const Header = () => {
             crossOrigin="true"
           />
           <h1 className="font-tourney font-semibold text-sm lg:text-2xl tracking-widest">
-            Pickup
+            AHALE
           </h1>
         </Link>
 
