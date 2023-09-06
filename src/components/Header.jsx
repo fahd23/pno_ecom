@@ -8,8 +8,6 @@ import { VscChromeClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { FiUser } from "react-icons/fi";
 
-import Logo from "../assets/chkoutlogo.png";
-
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [profile, setProfile] = useState(false);
@@ -43,14 +41,7 @@ const Header = () => {
       className={`w-full h-[50px] md:h-[80px] flex justify-between items-center z-20 sticky top-0 transition-transform duration-300 ${show} shadow-md bg-white`}
     >
       <Wrapper className="flex justify-between items-center h-[60px]">
-        <Link to="/" className="flex gap-1 lg:gap-2 items-center">
-          <img
-            src={Logo}
-            className="w-[30px] md:w-[40px]"
-            alt="logo"
-            rel="noreferrer"
-            crossOrigin="true"
-          />
+        <Link to="/" className="flex items-center">
           <h1 className="font-tourney font-semibold text-sm lg:text-2xl tracking-widest">
             AHALE
           </h1>
@@ -112,12 +103,12 @@ const Header = () => {
           <div className=" w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative -mr-2">
             {mobileMenu ? (
               <VscChromeClose
-                className="text-[16px]"
+                className="text-[20px]"
                 onClick={() => setMobileMenu(false)}
               />
             ) : (
               <BiMenuAltRight
-                className="text-[20px] flex "
+                className="text-[25px] flex "
                 onClick={() => setMobileMenu(true)}
               />
             )}
