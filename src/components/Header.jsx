@@ -100,17 +100,14 @@ const Header = () => {
           {/* Icon End */}
           {/* Mobile Icon Start */}
 
-          <div className=" w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative -mr-2">
+          <div
+            className=" w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative -mr-2"
+            onClick={() => setMobileMenu((prev) => !prev)}
+          >
             {mobileMenu ? (
-              <VscChromeClose
-                className="text-[20px]"
-                onClick={() => setMobileMenu(false)}
-              />
+              <VscChromeClose className="text-[20px]" />
             ) : (
-              <BiMenuAltRight
-                className="text-[25px] flex "
-                onClick={() => setMobileMenu(true)}
-              />
+              <BiMenuAltRight className="text-[25px] flex " />
             )}
           </div>
 
