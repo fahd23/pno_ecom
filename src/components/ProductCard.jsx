@@ -8,12 +8,12 @@ const ProductCard = ({ data }) => {
   return (
     <Link
       to="/product/1"
-      className="transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer w-64 rounded-2xl"
+      className="transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer w-full sm:w-64 rounded-2xl place-self-start"
     >
       <img
         src={`${IMG_URL}${data?.info?.cloudinaryImageId}`}
         alt="Product"
-        className="rounded-2xl w-64 h-64"
+        className="rounded-2xl w-full  h-64"
       />
       <div className="p-4 text-black/[0.9]">
         <h2 className="font-medium">{data?.info?.name}</h2>
