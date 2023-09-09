@@ -42,7 +42,7 @@ const Header = () => {
     >
       <Wrapper className="flex justify-between items-center h-[60px]">
         <Link to="/" className="flex items-center">
-          <h1 className="font-tourney font-semibold text-sm lg:text-2xl tracking-widest">
+          <h1 className="font-tourney font-semibold text-lg lg:text-2xl tracking-widest">
             AHALE
           </h1>
         </Link>
@@ -68,7 +68,7 @@ const Header = () => {
           {/* Icon Start */}
           <Link to="/cart">
             <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative">
-              <BsCart className="text-[15px] md:text-[20px]" />
+              <BsCart className="text-[18px] md:text-[20px]" />
               <div className="h-[14px] md:h-[18px] min-w-[18px] rounded-full bg-red-600 absolute top-1  left-5 md:left-7 text-white text-[10px] md-text-[12px] flex justify-center items-center px-[2px] md:px-[5px]">
                 0
               </div>
@@ -83,7 +83,7 @@ const Header = () => {
             onMouseLeave={() => setProfile(false)}
           >
             <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative">
-              <FiUser className="text-[15px] md:text-[20px]" />
+              <FiUser className="text-[18px] md:text-[20px]" />
 
               {profile && (
                 <ul className="bg-white absolute top-10 lg:top-[48px] left-[-30px] min-w-[80px] lg:min-w-[120px] px-1 py-1 shadow-lg rounded-sm">

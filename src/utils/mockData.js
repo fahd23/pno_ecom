@@ -2,8 +2,9 @@ export const mockData = [
   {
     info: {
       id: "16543",
-      name: "A2B - Adyar Ananda Bhavan",
-      cloudinaryImageId: "dsliyhlbtgtnnuxyrpsf",
+      name: "Aboorva Super Market",
+      cloudinaryImageId: `https://lh3.googleusercontent.com/p/AF1QipOJenzhguUf0amnVnDD1BmUel8lq9YgACm-AxYc=s1360-w1360-h1020`,
+      ownImageUrl: true,
       locality: "Purasai High Road",
       areaName: "Purasaiwakkam",
       costForTwo: "₹300 for two",
@@ -102,8 +103,10 @@ export const mockData = [
   {
     info: {
       id: "561677",
-      name: "The BVK Biryani (Bai Veetu Kalyanam)",
-      cloudinaryImageId: "m06mju5d5f9crrixw3ss",
+      name: "Sumaiya Super Market",
+      cloudinaryImageId:
+        "https://content.jdmagicbox.com/comp/cuddalore/h9/9999p4142.4142.191031193427.r5h9/catalogue/sumaya-super-market-cuddalore-ihx7iotwyv.jpg?clr=#1d1d49?w=3840&q=75",
+      ownImageUrl: true,
       locality: "Thiruvengadam Street",
       areaName: "Egmore",
       costForTwo: "₹550 for two",
